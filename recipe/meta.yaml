@@ -27,12 +27,17 @@ requirements:
     - python
 
 test:
+  files:
+    - tests
   imports:
     - pyap
   commands:
     - pip check
+    # tests available in master, just copied from here: https://github.com/vladimarius/pyap/blob/master/test_parser.py
+    - pytest -v tests
   requires:
     - pip
+    - pytest
 
 about:
   home: https://github.com/vladimarius/pyap
