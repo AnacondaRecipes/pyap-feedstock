@@ -1,0 +1,24 @@
+From bf0e73df5803687113dd770f4893acee0bfb95bf Mon Sep 17 00:00:00 2001
+From: Andrii Osipov <aosipov@anaconda.com>
+Date: Tue, 4 Feb 2025 10:43:22 -0800
+Subject: [PATCH] change build backend to poetry core
+
+---
+ pyproject.toml | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/pyproject.toml b/pyproject.toml
+index 0a54930..1c47919 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -13,5 +13,5 @@ python = ">=2.7"
+ [tool.poetry.dev-dependencies]
+ 
+ [build-system]
+-requires = ["poetry>=0.12"]
+-build-backend = "poetry.masonry.api"
++requires = ["poetry-core"]
++build-backend = "poetry.core.masonry.api"
+-- 
+2.39.3 (Apple Git-146)
+
